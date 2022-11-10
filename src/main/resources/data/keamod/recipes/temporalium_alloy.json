@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "T": {
+      "item": "keamod:time_rubber"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "I": {
+      "item": "minecraft:raw_iron"
+    }
+  },
+  "pattern": [
+    "ITI",
+    "TRT",
+    "ITI"
+  ],
+  "result": {
+    "item": "keamod:temporalium_alloy"
+  }
+}

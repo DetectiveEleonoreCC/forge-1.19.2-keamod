@@ -1,6 +1,7 @@
 package net.eleonore.keamod;
 
 import com.mojang.logging.LogUtils;
+import net.eleonore.keamod.block.ModBlocks;
 import net.eleonore.keamod.item.ModItems;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -18,11 +19,11 @@ public class KeaMod
     public static final String MODID = "keamod";
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    //Second GitHub Commit Test
     public KeaMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

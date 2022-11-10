@@ -1,6 +1,11 @@
 {
   "item.keamod.kea_feather": "Plume de Kéa",
   "item.keamod.kea_feather_tail": "Plume de Queue de Kéa",
+  "item.keamod.time_rubber": "Caoutchouc Temporel",
+  "item.keamod.temporalium_alloy": "Alliage de Temporalium Brut",
+  "item.keamod.temporalium_alloy_smelted": "Alliage de Temporalium",
+  "block.keamod.time_rubber_ore": "Minerai de Caoutchouc Temporel",
+  "block.keamod.time_rubber_ore_deepslate": "Minerai de Caoutchouc Temporel des Abîmes",
 
   "itemGroup.tab_kea": "Kéa"
 }

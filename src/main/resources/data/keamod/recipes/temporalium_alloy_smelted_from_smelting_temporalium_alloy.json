@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.5,
+  "group": "temporalium",
+  "ingredient": {
+    "item": "keamod:temporalium_alloy"
+  },
+  "result": "keamod:temporalium_alloy_smelted"
+}

@@ -1,6 +1,13 @@
 {
   "item.keamod.kea_feather": "Kea Feather",
   "item.keamod.kea_feather_tail": "Kea Tail Feather",
+  "item.keamod.time_rubber": "Time Rubber",
+  "item.keamod.temporalium_alloy": "Raw Temporalium Alloy",
+  "item.keamod.temporalium_alloy_smelted": "Temporalium Alloy",
+  "block.keamod.time_rubber_ore": "Time Rubber Ore",
+  "block.keamod.time_rubber_ore_deepslate": "Time Rubber Deepslate Ore",
+
+
 
   "itemGroup.tab_kea": "Kea"
 }
