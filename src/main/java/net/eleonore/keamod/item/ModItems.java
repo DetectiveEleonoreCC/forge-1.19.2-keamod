@@ -2,7 +2,9 @@ package net.eleonore.keamod.item;
 
 import net.eleonore.keamod.KeaMod;
 //import net.minecraft.world.item.CreativeModeTab;
+import net.eleonore.keamod.entity.ModEntityTypes;
 import net.minecraft.world.item.Item;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -22,6 +24,9 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TAB_KEA)));
     public static final RegistryObject<Item> TEMPORALIUM_ALLOY_SMELTED = ITEMS.register("temporalium_alloy_smelted",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TAB_KEA)));
+    public static final RegistryObject<Item> KIWI_SPAWN_EGG = ITEMS.register("kiwi_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntityTypes.KIWI, 0x765340, 0xfaddc9,
+                    new Item.Properties().tab(ModCreativeModeTab.TAB_KEA)));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
