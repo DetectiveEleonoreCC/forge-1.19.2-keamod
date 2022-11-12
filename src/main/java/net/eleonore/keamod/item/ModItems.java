@@ -27,6 +27,9 @@ public class ModItems {
     public static final RegistryObject<Item> KIWI_SPAWN_EGG = ITEMS.register("kiwi_spawn_egg",
             () -> new ForgeSpawnEggItem(ModEntityTypes.KIWI, 0x765340, 0xfaddc9,
                     new Item.Properties().tab(ModCreativeModeTab.TAB_KEA)));
+    public static final RegistryObject<Item> KEA_SPAWN_EGG = ITEMS.register("kea_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntityTypes.KEA, 0x8a822c, 0x5b8026,
+                    new Item.Properties().tab(ModCreativeModeTab.TAB_KEA)));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

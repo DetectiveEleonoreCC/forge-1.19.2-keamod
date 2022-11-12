@@ -1,6 +1,7 @@
 package net.eleonore.keamod.entity;
 
 import net.eleonore.keamod.KeaMod;
+import net.eleonore.keamod.entity.custom.KeaEntity;
 import net.eleonore.keamod.entity.custom.KiwiEntity;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EntityType;
@@ -17,8 +18,14 @@ public class ModEntityTypes {
     public static final RegistryObject<EntityType<KiwiEntity>> KIWI =
             ENTITY_TYPES.register("kiwi",
                     () -> EntityType.Builder.of(KiwiEntity::new, MobCategory.CREATURE)
-                            .sized(0.4f, 0.7f)
+                            .sized(0.35f, 0.6f)
                             .build(new ResourceLocation(KeaMod.MODID, "kiwi").toString()));
+
+    public static final RegistryObject<EntityType<KeaEntity>> KEA =
+            ENTITY_TYPES.register("kea",
+                    () -> EntityType.Builder.of(KeaEntity::new, MobCategory.CREATURE)
+                            .sized(0.5f, 0.9f)
+                            .build(new ResourceLocation(KeaMod.MODID, "kea").toString()));
 
     public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);

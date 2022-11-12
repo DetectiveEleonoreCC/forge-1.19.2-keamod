@@ -3,6 +3,7 @@ package net.eleonore.keamod;
 import com.mojang.logging.LogUtils;
 import net.eleonore.keamod.block.ModBlocks;
 import net.eleonore.keamod.entity.ModEntityTypes;
+import net.eleonore.keamod.entity.client.KeaRenderer;
 import net.eleonore.keamod.entity.client.KiwiRenderer;
 import net.eleonore.keamod.item.ModItems;
 import net.minecraft.client.renderer.entity.EntityRenderers;
@@ -50,6 +51,7 @@ public class KeaMod
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
             EntityRenderers.register(ModEntityTypes.KIWI.get(), KiwiRenderer::new);
+            EntityRenderers.register(ModEntityTypes.KEA.get(), KeaRenderer::new);
 
         }
     }
