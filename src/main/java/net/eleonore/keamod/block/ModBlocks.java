@@ -1,6 +1,7 @@
 package net.eleonore.keamod.block;
 
 import net.eleonore.keamod.KeaMod;
+import net.eleonore.keamod.block.custom.CopperCageBlock;
 import net.eleonore.keamod.item.ModCreativeModeTab;
 import net.eleonore.keamod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -33,6 +34,16 @@ public class ModBlocks {
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops().explosionResistance(2f),
                     UniformInt.of(5, 11)), ModCreativeModeTab.TAB_KEA);
+
+    public static final RegistryObject<Block> COPPER_CAGE = registerBlock("copper_cage",
+            () -> new CopperCageBlock(BlockBehaviour.Properties.of(Material.METAL).noOcclusion()
+                    .strength(6f).requiresCorrectToolForDrops().explosionResistance(2f)
+                    .lightLevel(state -> state.getValue(CopperCageBlock.LIT) ? 10 : 0)), ModCreativeModeTab.TAB_KEA);
+
+    public static final RegistryObject<Block> CARVED_HIEROGLYPHS = registerBlock("carved_hieroglyphs",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(4f).requiresCorrectToolForDrops()),
+                    ModCreativeModeTab.TAB_KEA);
+
 
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {

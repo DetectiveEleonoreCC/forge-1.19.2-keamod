@@ -6,6 +6,9 @@ import net.eleonore.keamod.entity.ModEntityTypes;
 import net.eleonore.keamod.entity.client.KeaRenderer;
 import net.eleonore.keamod.entity.client.KiwiRenderer;
 import net.eleonore.keamod.item.ModItems;
+import net.eleonore.keamod.villager.ModVillagers;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -33,16 +36,26 @@ public class KeaMod
 
         ModEntityTypes.register(modEventBus);
 
+        ModVillagers.register(modEventBus);
+
 
         GeckoLib.initialize();
 
         modEventBus.addListener(this::commonSetup);
+        modEventBus.addListener(this::clientSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
+        event.enqueueWork(() -> {
+            ModVillagers.registerPOIs();
+        });
 
+    }
+
+    private void clientSetup(final FMLClientSetupEvent event) {
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.COPPER_CAGE.get(), RenderType.cutout());
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent

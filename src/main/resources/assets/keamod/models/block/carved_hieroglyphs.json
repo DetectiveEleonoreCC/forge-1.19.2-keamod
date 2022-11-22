@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "keamod:block/carved_hieroglyphs_top",
+    "east": "keamod:block/carved_hieroglyphs_side",
+    "north": "keamod:block/carved_hieroglyphs_side",
+    "particle": "keamod:block/carved_hieroglyphs_side",
+    "south": "keamod:block/carved_hieroglyphs_side",
+    "up": "keamod:block/carved_hieroglyphs_top",
+    "west": "keamod:block/carved_hieroglyphs_side"
+  }
+}

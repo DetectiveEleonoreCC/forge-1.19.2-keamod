@@ -4,11 +4,21 @@
   "item.keamod.time_rubber": "Time Rubber",
   "item.keamod.temporalium_alloy": "Raw Temporalium Alloy",
   "item.keamod.temporalium_alloy_smelted": "Temporalium Alloy",
-  "block.keamod.time_rubber_ore": "Time Rubber Ore",
-  "block.keamod.time_rubber_ore_deepslate": "Time Rubber Deepslate Ore",
   "item.keamod.kiwi_spawn_egg": "Kiwi Spawn Egg",
   "item.keamod.kea_spawn_egg": "Kea Spawn Egg",
+  "item.keamod.energized_temporalium": "Energized Temporalium",
+  "item.keamod.scroll1": "'On the Malleableness of Time'",
+  "item.keamod.scroll2": "'On the Constraints of Space'",
+  "item.keamod.scroll3": "'On the Power of Lightning'",
+  "item.keamod.scroll4": "'On the Properties of Temporalium'",
+  "item.keamod.pen_n_glass": "Pen 'n Glass",
 
+  "block.keamod.copper_cage": "Copper Cage",
+  "block.keamod.time_rubber_ore": "Time Rubber Ore",
+  "block.keamod.time_rubber_ore_deepslate": "Time Rubber Deepslate Ore",
+  "block.keamod.carved_hieroglyphs": "Carved Hieroglyphs",
+
+  "entity.minecraft.villager.keamod.translator": "Uncanny Translator",
 
 
   "itemGroup.tab_kea": "Kea"
